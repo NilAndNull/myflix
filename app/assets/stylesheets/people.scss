@@ -1,0 +1,31 @@
+section.people {
+  width: 950px;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  header {
+    h2 {
+      font-size: 24px;
+    }
+    margin-bottom: 30px;
+  }
+  table {
+    border-bottom: 1px solid #dddddd;
+    tbody, thead {
+      tr {
+        th, td {
+          text-align: center;
+        }
+        td {
+          img {
+            margin-right: 10px;
+          }
+          &.extra-padding {
+            padding-top: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,24 @@
+body {
+  margin: 20px;
+  background-color: #e1e1e1;
+  a {
+    color: #ae1d00;
+  }
+  section.content {
+    padding-bottom: 50px;
+    border-bottom: 3px solid #b9090b;
+    margin-bottom: 20px;
+  }
+}
+
+section.ui-index {
+  background: #f7f7f7;
+  padding: 30px;
+}
+
+fieldset.actions {
+  input[type="submit"] {
+    margin-right: 10px;
+  }
+}
+

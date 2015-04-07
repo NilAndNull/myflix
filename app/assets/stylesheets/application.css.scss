@@ -9,7 +9,10 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require bootstrap
  *= require whitespace-reset
  *= require_tree .
 */
+
+// Bootstrap Framework
+@import "bootstrap-sprockets";
+@import "bootstrap";

@@ -178,7 +178,7 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   binding_of_caller
-  bootstrap-sass
+  bootstrap-sass (~> 3.3.4)
   coffee-rails
   database_cleaner (~> 1.4.1)
   jquery-rails
@@ -188,6 +188,6 @@ DEPENDENCIES
   rails (= 4.2.1)
   rails_12factor
   rspec-rails (~> 3.2.1)
-  sass-rails
+  sass-rails (~> 5.0.3)
   thin
   uglifier
