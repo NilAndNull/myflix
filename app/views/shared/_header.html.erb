@@ -1,0 +1,40 @@
+<section class="row" id="top-header">
+  <h1 class="col-md-2">
+    <%= link_to "MyFLiX" %>
+  </h1>
+  <ul class="col-md-4 clearfix">
+    <li>
+      <%= link_to "Videos" %>
+    </li>
+    <li>
+      <%= link_to "My Queue" %>
+    </li>
+    <li>
+      <%= link_to "People" %>
+    </li>
+  </ul>
+  <form class="col-md-5 navbar-form" action="">
+    <div class="form-group">
+      <input class="form-control" type="text" placeholder="Search for videos here"></input>
+    </div>
+    <button class="btn btn-default" type="submit"> Search</button>
+  </form>
+  <div class="pull-right" id="user_links">
+    <ul>
+      <li class="dropdown">
+        <a href="#" id="dlabel" role="button" data-toggle="dropdown" class="dropdown-toggle" data-target="#">
+          Welcome, Philip J. Fry
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dlabel">
+          <li>
+            <a href="#"> Account</a>
+            <a href="#"> Plan and Billing</a>
+            <a href="#"> Sign Out</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+

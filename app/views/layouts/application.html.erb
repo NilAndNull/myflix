@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+  <head>
+    <title>MyFLiX - a video on demand service</title>
+    <meta/>
+    <meta/>
+    <%= csrf_meta_tag %>
+    <%= stylesheet_link_tag "application" %>
+    <%= javascript_include_tag "application" %>
+  </head>
+
+  <body>
+    <header>
+      <%= render 'shared/header' %>
+    </header>
+    <section class="content clearfix">
+      <%= render 'shared/messages' %>
+      <%= yield %>
+    </section>
+    <footer>
+      &copy 2013 MyFLiX
+    </footer>
+  </body>
+  
+</html>
+
