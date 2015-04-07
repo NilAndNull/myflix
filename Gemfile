@@ -9,6 +9,12 @@ gem 'uglifier'
 gem 'jquery-rails'
 gem 'pg'
 
+# Automatically adds the proper vendor prefixes to CSS code when it is compiled
+gem 'autoprefixer-rails', '~> 5.1.7'
+
+# The default_value_for plugin allows one to define default values for ActiveRecord models in a declarative manner.
+gem "default_value_for", '~> 3.0.1'
+
 group :development do
   gem 'thin'
   gem "better_errors"
@@ -19,6 +25,9 @@ group :development, :test do
   gem 'pry'
   gem 'pry-nav'
   gem 'rspec-rails', '~> 3.2.1'
+  
+   # Add a comment summarizing the current schema, in model files, routes, tests and fixtures
+  gem 'annotate', '~> 2.6.8'
 end
 
 group :test do

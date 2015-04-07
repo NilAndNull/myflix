@@ -1,0 +1,18 @@
+<% @categories.each do |category| %>
+<article class="video_category">
+  <header>
+    <h3>
+      <%= link_to category.name.capitalize, category_path(category) %>
+    </h3>
+  </header>
+  <div class="videos row">
+    <% category.videos.each do |video| %>
+      <div class="video col-sm-2">
+        <%= link_to video_path(video) do %>
+          <%= image_tag video.poster_url %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</article>
+<% end %>
