@@ -1,0 +1,12 @@
+<article class="video row">
+  <% if @videos.nil? or @videos.size == 0 %>
+    <h2>No results. Try again.</h2>
+  <% end %>
+  <% @videos.each do |video| %>
+    <div class="video col-sm-2">
+      <%= link_to video_path(video) do %>
+        <%= image_tag video.poster_url %>
+      <% end %>
+    </div>
+  <% end %>
+</article>

@@ -22,4 +22,8 @@ class VideosController < ApplicationController
   def destroy
   end
 
+  def search
+    @videos = Video.search_by_title(params[:q])
+  end
+
 end

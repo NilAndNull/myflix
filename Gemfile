@@ -35,6 +35,8 @@ group :development, :test do
   
    # Add a comment summarizing the current schema, in model files, routes, tests and fixtures
   gem 'annotate', '~> 2.6.8'
+
+  gem 'shoulda'
 end
 
 group :test do

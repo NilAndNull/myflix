@@ -13,12 +13,17 @@
       <%= link_to "People" %>
     </li>
   </ul>
-  <form class="col-md-5 navbar-form" action="">
-    <div class="form-group">
-      <input class="form-control" type="text" placeholder="Search for videos here"></input>
-    </div>
-    <button class="btn btn-default" type="submit"> Search</button>
+  
+  <form action="<%= search_videos_path %>" method="get" class= "col-md-5 navbar-form">
+
+    <%= content_tag :div, class: 'form-group' do %>
+      <%= text_field_tag :q, params[:q], class: 'form-control', placeholder: 'Search for videos here' %>
+    <% end %>
+
+    <%= button_tag "Search", :q => nil, name: nil, class: 'btn btn-default' %>
+
   </form>
+
   <div class="pull-right" id="user_links">
     <ul>
       <li class="dropdown">
