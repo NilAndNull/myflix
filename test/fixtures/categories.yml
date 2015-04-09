@@ -8,6 +8,9 @@
 #  updated_at :datetime         not null
 #
 
-class Category < ActiveRecord::Base
-  has_many :videos, -> { order("title") }
-end
+
+comedies:
+  name: TV Comedies
+
+tvshows: 
+  name: TV Shows

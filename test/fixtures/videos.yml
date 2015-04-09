@@ -1,0 +1,41 @@
+# == Schema Information
+#
+# Table name: videos
+#
+#  id               :integer          not null, primary key
+#  uuid             :string
+#  title            :string
+#  description      :string
+#  poster_url       :string
+#  poster_large_url :string
+#  rate             :float
+#  created_at       :datetime         not null
+#  updated_at       :datetime         not null
+#  category_id      :integer
+#
+# Indexes
+#
+#  index_videos_on_category_id  (category_id)
+#  index_videos_on_uuid         (uuid) UNIQUE
+#
+
+
+monk: 
+  title: Monk
+  description: Adrian Monk is a brilliant San Francisco detective, whose obsessive compulsive disorder just happens to get in the way.
+  category: tvshows
+
+family_guy:
+  title: Family Guy
+  description: In a wacky Rhode Island town, a dysfunctional family strive to cope with everyday life as they are thrown from one crazy scenario to another.
+  category: comedies
+
+futurama: 
+  title: Futurama
+  description: "Fry, a pizza guy is accidentally frozen in 1999 and thawed out New Year's Eve 2999."
+  category: comedies
+
+south_park:
+  title: South Park
+  description: Follows the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado.
+  category: comedies

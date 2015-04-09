@@ -24,7 +24,14 @@ end
 group :development, :test do
   gem 'pry'
   gem 'pry-nav'
-  gem 'rspec-rails', '~> 3.2.1'
+  gem 'ruby-prof'
+  gem 'rails-perftest'
+
+  # Create customizable Minitest output formats
+  gem 'minitest-reporters', '1.0.8'
+  
+  # Allows to take advantage of the Rails.backtrace_cleaner when using MiniTest.
+  gem 'mini_backtrace', '0.1.3'
   
    # Add a comment summarizing the current schema, in model files, routes, tests and fixtures
   gem 'annotate', '~> 2.6.8'
