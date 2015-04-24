@@ -30,7 +30,7 @@ class VideoTest < ActiveSupport::TestCase
   def setup
     @video = Video.new(title: "Movie Test I",
                        description: "Movie Test I Description",
-                       category: categories(:tvshows))
+                       category: categories(:horror))
   end
 
 
@@ -48,7 +48,7 @@ class VideoTest < ActiveSupport::TestCase
 
   test 'has a category' do
     assert_not @video.category.nil?
-    assert_equal @video.category.name, "TV Shows"
+    assert_equal @video.category.name, "Horror"
   end
 
 
@@ -111,7 +111,7 @@ class VideoTest < ActiveSupport::TestCase
 
     assert_not result.nil?
     assert_equal Array, result.class
-    assert_equal 2, result.size
+    assert_equal 3, result.size
     assert_equal family_guy, result.first
     assert_equal futurama, result.second
   end

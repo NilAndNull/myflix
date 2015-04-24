@@ -8,9 +8,69 @@
 #  updated_at :datetime         not null
 #
 
+action:
+  name: Action
 
-comedies:
-  name: TV Comedies
+adventure:
+  name: Adventure
 
-tvshows: 
-  name: TV Shows
+animation:
+  name: Animation
+
+biography:
+  name: Biography
+
+comedy: 
+  name: Comedy
+
+crime: 
+  name: Crime
+
+documentary: 
+  name: Documentary
+
+drama: 
+  name: Drama
+
+family: 
+  name: Family
+
+fantasy: 
+  name: Fantasy
+
+film-noir: 
+  name: Film-Noir
+
+history: 
+  name: History
+
+horror: 
+  name: Horror
+
+music: 
+  name: Music
+
+musical: 
+  name: Musical
+
+mystery: 
+  name: Mystery
+
+romance: 
+  name: Romance
+
+sci-fi: 
+  name: Sci-Fi
+
+sport: 
+  name: Sport
+
+thriller: 
+  name: Thriller
+
+war: 
+  name: War
+
+western: 
+  name: Western
+

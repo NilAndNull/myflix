@@ -9,11 +9,16 @@ gem 'uglifier'
 gem 'jquery-rails'
 gem 'pg'
 
+gem 'bcrypt'
+
 # Automatically adds the proper vendor prefixes to CSS code when it is compiled
 gem 'autoprefixer-rails', '~> 5.1.7'
 
 # The default_value_for plugin allows one to define default values for ActiveRecord models in a declarative manner.
 gem "default_value_for", '~> 3.0.1'
+
+# Rails form builder that makes it super easy to integrate twitter bootstrap-style forms into your rails application.
+gem 'bootstrap_form'
 
 group :development do
   gem 'thin'
@@ -37,6 +42,9 @@ group :development, :test do
   gem 'annotate', '~> 2.6.8'
 
   gem 'shoulda'
+
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug', '~> 4.0.3'
 end
 
 group :test do

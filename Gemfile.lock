@@ -44,6 +44,7 @@ GEM
     autoprefixer-rails (5.1.8.1)
       execjs
       json
+    bcrypt (3.1.10)
     better_errors (2.1.1)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -53,7 +54,10 @@ GEM
     bootstrap-sass (3.3.4.1)
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.2.19)
+    bootstrap_form (2.3.0)
     builder (3.2.2)
+    byebug (4.0.5)
+      columnize (= 0.9.0)
     coderay (1.1.0)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
@@ -62,6 +66,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.9.1)
+    columnize (0.9.0)
     daemons (1.2.2)
     database_cleaner (1.4.1)
     debug_inspector (0.0.2)
@@ -183,9 +188,12 @@ PLATFORMS
 DEPENDENCIES
   annotate (~> 2.6.8)
   autoprefixer-rails (~> 5.1.7)
+  bcrypt
   better_errors
   binding_of_caller
   bootstrap-sass (~> 3.3.4)
+  bootstrap_form
+  byebug (~> 4.0.3)
   coffee-rails
   database_cleaner (~> 1.4.1)
   default_value_for (~> 3.0.1)
